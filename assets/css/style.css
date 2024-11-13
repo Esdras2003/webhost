@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Modak&family=Mogra&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif; 
+    font-family: "Roboto", sans-serif;
 }
 .navbar-container{
     width: 100%;
     height: 80px;
-    background-color: #000000;
+    background-color: #0E0D0D;
     position: relative;
+   
 }
 .logo{
     width: 50px;
@@ -26,31 +27,33 @@ nav{
     height: 80px;
     line-height: 80px;
     margin: 0;
-    right: 12px;
+    right: 10px;
     top: 0;
 }
 .navbar-itens li{
     display: inline-block;
     text-transform: uppercase;
     margin-left: 25px;
-
+   
 }
 .navbar-itens li a{
-    color: #ffffff;
-    text-decoration: none;   
+    color: #FFFFFF;
+    text-decoration: none;
     transition: 0.5s;
 }
+
 .navbar-itens li a:hover{
-    color: darkgray;
+    color: darkgrey;
 }
 .default-btn{
     padding: 15px 20px;
-    background-color: #58BD34;
-    border-radius: 15px;
+    background-color: #52FC16;
+    border-radius: 15px;    
 
 }
 .default-btn:hover{
-    background-color: #157c05 ;
+    background-color: #157c05;
+
 }
 .navbar-itens .btn a{
     color: black;
@@ -59,7 +62,7 @@ nav{
 .background{
     background-image: url(../img/mainbanner.png);
     height: 600px;
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -68,12 +71,12 @@ nav{
     align-items: center;
 }
 .background h1{
-    color: #ffffff;
+    color:#FFFFFF;
     font-size: 64px;
     font-weight: 900;
 }
 .background h2{
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 32px;
     font-weight: 600;
 }
@@ -87,10 +90,10 @@ nav{
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
-    gap: 5%;
+    gap:5%;
 }
 .service-container ul li{
-    flex: 1 1 200px;
+    flex:1 1 200px;
     list-style: none;
     text-align: center;
     padding: 20px;
@@ -101,13 +104,13 @@ nav{
     margin-bottom: 25px;
 }
 .fa-shield-halved{
-    color: #225685;
+    color: #52FC16;
 }
 .fa-rocket{
-    color: #E42020;
+    color: #F40909;
 }
 .fa-comments{
-    color: #D08484;
+    color: #FAA423;
 }
 .service-container ul li h3{
     margin-bottom: 25px;
@@ -118,7 +121,7 @@ nav{
 .planos-container{
     padding: 5em;
     text-align: center;
-    background-color:#BCBCBC ;
+    background-color: #333A74;
 }
 .planos-container h2{
     font-size: 36px;
@@ -128,7 +131,7 @@ nav{
     font-size: 20px;
 }
 .precos-container{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     margin-top: 50px;
     width: 90%;
@@ -136,32 +139,35 @@ nav{
     margin-left: auto;
     margin-right: auto;
 }
-.plano{
+.plano {
     flex: 1 1 200px;
-    max-width: 275px;
+    max-width: 280px;
     margin-left: 20px;
     margin-right: 20px;
 }
-.planos-container .precos-container .precos{
-    background-color: #24FF00;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.planos-container .precos-container .preco{
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    padding-top: 25%;
-    font-size: 25px;
-    font-weight: 600;
-    z-index: 1000;
+    background-color: purple;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    font-size: 18px;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    margin-bottom: -22%;
 }
+
 .planos-container .precos-container .nome-plano{
     font-size: 30px;
-    width: 280px;
+    width: 280px ;
     height: 120px;
-    background-color:#000000;
-    line-height: 180px;
+    background-color: black;
+    color: white;
+    line-height: 150px ;
 }
 .plano ul li{
     list-style: none;
@@ -170,10 +176,98 @@ nav{
     padding-top: 10px;
 }
 .planos-container .precos-container .btn-plano{
-    background-color: #24FF00;
-    color: black;
-    font-size: 26px;
-    font-weight: 600;
-    height: 50px;
+   background-color: #1C92FF;
+   color: black;
+   font-size: 26px;
+   font-weight: 600;
+   height: 50px;
 }
-.planos-container .recomendado
+.planos-container .precos-container .recomendado{
+    background-color: #00FFB9
+}
+.buscar-dominio{
+    background-color: #000000;
+    text-align: center;
+    padding: 5em 0;
+}
+.buscar-dominio h2{
+    color: #fff;
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.buscar-dominio p{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.buscar-dominio input{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.buscar-dominio input[type=text]{
+    width: 60%;
+    margin-bottom: 25px;
+    padding: 20px;
+    font-size: 20px;
+}
+.buscar-dominio input[type=submit]{
+    background-color: #52FC16;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+.contato-container{
+    text-align: center;
+    padding: 5em;
+    padding-bottom: 2em;
+}
+.contato-container h2{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.contato-container input, .contato-container textarea{
+    width: 220px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.contato-container textarea{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 468px;
+    height: 150px;
+}
+.contato-container input[type=submit]{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #52FC16;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
